@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end"
+    android:id="@+id/drawer"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/navigation">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@color/icon_navi" />
+
+                <Button
+                    android:id="@+id/addTable"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/c1"
+                    android:text="Add Table"
+                    android:textColor="@color/icon_navi" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_navi"
+            app:itemIconTint="@color/icon_navi"
+            app:itemTextColor="@color/Text_navi"
+            app:menu="@menu/navigation"
+            />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:menu="@menu/menu_item"
+        app:headerLayout="@layout/header"
+        android:background="@color/c3"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

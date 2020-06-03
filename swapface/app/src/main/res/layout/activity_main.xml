@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The LinearLayout is the root element of the layout hierarchy, and thus
+it must specify the Android Resource XML namespace at http://schemas.android.com/apk/res/android-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PicureTopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+
+    <com.divyanshu.draw.widget.DrawView
+        android:id="@+id/draw_view1"
+        android:layout_width="173dp"
+        android:layout_height="204dp"
+        android:background="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="@+id/pictureBut1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <com.divyanshu.draw.widget.DrawView
+        android:id="@+id/draw_view2"
+        android:layout_width="173dp"
+        android:layout_height="204dp"
+        android:background="@color/color_white"
+        app:layout_constraintBottom_toBottomOf="@+id/pictureBut1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <Button
+        android:id="@+id/pictureBut1"
+        android:layout_width="124dp"
+        android:layout_height="49dp"
+        android:layout_gravity="right"
+        android:layout_marginBottom="276dp"
+        android:onClick="startCameraIntentForResult1"
+        android:text="Take photo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/choseBut1"
+        android:layout_width="96dp"
+        android:layout_height="41dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="196dp"
+        android:onClick="startChooseImageIntentForResult1"
+        android:text="Select1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/choseBut2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pictureBut1"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <Button
+        android:id="@+id/pictureBut2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="276dp"
+        android:onClick="startCameraIntentForResult2"
+        android:text="Take photo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.072"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/choseBut2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="228dp"
+        android:onClick="startChooseImageIntentForResult2"
+        android:text="Select2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clear1"
+        android:layout_width="78dp"
+        android:layout_height="41dp"
+        android:layout_gravity="left"
+        android:onClick="clear1"
+        android:text="clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blur1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="124dp"
+        android:onClick="clear2"
+        android:text="clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/blur2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/blur1"
+        android:layout_width="58dp"
+        android:layout_height="53dp"
+        android:layout_gravity="left"
+        android:onClick="blur1"
+        android:text="Blur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choseBut1"
+        app:layout_constraintVertical_bias="0.04"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/blur2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="180dp"
+        android:onClick="blur2"
+        android:text="Blur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/choseBut2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/swap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="188dp"
+        android:onClick="Swap"
+        android:text="SWAP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/swapback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:onClick="Swapback"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/choseBut2"
+        app:layout_constraintHorizontal_bias="0.283"
+        app:layout_constraintStart_toEndOf="@+id/pictureBut1"
+        app:layout_constraintTop_toBottomOf="@+id/swap"
+        app:layout_constraintVertical_bias="0.105"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

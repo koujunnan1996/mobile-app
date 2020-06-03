@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "547965803776",
+    "firebase_url": "https://myproject-4e8de.firebaseio.com",
+    "project_id": "myproject-4e8de",
+    "storage_bucket": "myproject-4e8de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547965803776:android:16a1dc8f92d9102a58e7e5",
+        "android_client_info": {
+          "package_name": "edu.uw.eep523.takepicture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547965803776-pbff2g9r0fb7d1chioas93dfvorj3gqc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5iJGtlYLBy0GHrRrjAeomVSFKwb6doWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547965803776-pbff2g9r0fb7d1chioas93dfvorj3gqc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
